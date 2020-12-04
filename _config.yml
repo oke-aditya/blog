@@ -26,6 +26,7 @@ twitter_username: AdityaOke11
 github_username: oke-aditya
 minimal_mistakes_skin: default
 search: true
+github: [metadata]
 
 # Build settings
 markdown: kramdown
