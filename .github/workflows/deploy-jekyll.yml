@@ -1,11 +1,11 @@
-name: Build Jekyll Page
+name: Deploy Jekyll Pages
 
 on:
-  pull_request:
+  push:
     branches: [ master ]
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,10 +20,10 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Test Jekyll Pages
+      - name: Build & Deploy to GitHub Pages
         uses: DavidS/jekyll-deploy@main
         with:
-          build-only: true
+          target-branch: gh-pages
         env:
           JEKYLL_ENV: production
           GH_PAGES_TOKEN: ${{ secrets.GH_TOKEN }}
