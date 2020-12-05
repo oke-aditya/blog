@@ -62,7 +62,7 @@ plugins:
 author:
   name   : "Aditya Oke"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Undergrad Student. Aspiring Machine Learning Engineer."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
