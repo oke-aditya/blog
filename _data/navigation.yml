@@ -3,7 +3,9 @@ main:
     url: /about/
   - title: "Projects"
     url: /projects/
-  - title: "Research"
-    url: /research/
+  - title: "Work"
+    url: /work/
   - title: "Talks"
     url: /talks/
+  - title: "Tags"
+    url: /tags/
