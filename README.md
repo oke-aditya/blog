@@ -16,4 +16,3 @@ This was built using Jekyll. Which makes it very easy to maintain.
 
 The website uses Minimal mistakes [template](https://github.com/mmistakes/mm-github-pages-starter/generate)
 which gives this website the pleasant formatting.
-
