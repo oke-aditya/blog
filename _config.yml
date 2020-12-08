@@ -67,9 +67,9 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Undergrad Student. Aspiring Machine Learning Engineer."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://oke-aditya.github.io/me/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:okeaditya315@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/AdityaOke11"
@@ -79,6 +79,9 @@ author:
 
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:okeaditya315@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/AdityaOke11"
