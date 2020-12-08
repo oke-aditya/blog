@@ -3,12 +3,19 @@ title: "Challenges with Machine Learning Projects"
 tag:
   - Projects
   - Machine Learning
+
+excerpt: "Why Machine Learning Projects become code spaghetti?"
+header:
+  overlay_color: "#333"
+
 ---
 
+## Introduction
 
 Machine Learning Projects are hard to make. Maintaining them is even much harder.
-Most projects usually are not maintainable after a few weeks or say a few months.
-This usually happens for pet projects or projects made by students. I too have faced such hurdles and can give a few reasons why it occurs so.
+Code becomes complex and end of month or year, it becomes impossible to understand it.
+
+## But Why do projects become spaghetti code ?
 
 - Lack of project structure: -
 
@@ -76,4 +83,4 @@ Well all the above examples are use cases of under engineering or not following 
 But at cases, people try to do too much and re-invent the wheel. There are multiple well supported and documented libraries available.
 Try to use those and their methods, most functions are already present and work really well.
 
-That's all for this blog! After reading this you should probably code cleaner if not better.
+That's all for this blog! Hopefully your next project doesn't become a spaghetti code!
