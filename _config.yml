@@ -71,6 +71,8 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-mentions
+  - jekyll-avatar
 
 author:
   name   : "Aditya Oke"
@@ -123,3 +125,4 @@ defaults:
 tag_archive:
   type: liquid
   path: /tags/
+
