@@ -55,13 +55,13 @@ exclude:
   - LICENSE
   - README
   - CHANGELOG
-  # - Gemfile
-  # - Gemfile.lock
-  # - node_modules
-  # - vendor/bundle/
-  # - vendor/cache/
-  # - vendor/gems/
-  # - vendor/ruby/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Comments provider
 comments:
