@@ -38,22 +38,30 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:  Asia/Kolkata
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
+  - .htaccess
   - _pages
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - LICENSE
+  - README
+  - CHANGELOG
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Comments provider
 comments:
@@ -70,11 +78,14 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-mentions
+  - jekyll-avatar
 
 author:
   name   : "Aditya Oke"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Undergrad Student. Aspiring Machine Learning Engineer."
+  location: "India"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -104,8 +115,6 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
       values:
       layout: single
       author_profile: true
@@ -124,3 +133,4 @@ defaults:
 tag_archive:
   type: liquid
   path: /tags/
+
