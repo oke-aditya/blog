@@ -130,8 +130,6 @@ GEM
       unicode-display_width (~> 1.1, >= 1.1.1)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2020.6)
-      tzinfo (>= 1.0.0)
     unicode-display_width (1.7.0)
     verbal_expressions (0.1.5)
     zeitwerk (2.4.2)
@@ -151,7 +149,6 @@ DEPENDENCIES
   jekyll-sitemap
   jemoji
   minimal-mistakes-jekyll (~> 4.21.0)
-  tzinfo-data
 
 RUBY VERSION
    ruby 2.7.2p137
