@@ -32,8 +32,8 @@ search: true
 github: [metadata]
 
 # Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+# remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -46,7 +46,24 @@ include:
   - _pages
 
 encoding: "utf-8"
+markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
