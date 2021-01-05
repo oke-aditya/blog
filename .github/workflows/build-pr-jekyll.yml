@@ -5,25 +5,32 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+  jekyll:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
       - name: Cache gems
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
-          path: vendor/gems
-          key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
-            ${{ runner.os }}-build-
+            ${{ runner.os }}-gems-
             ${{ runner.os }}-
 
       - name: Test Jekyll Pages
-        uses: DavidS/jekyll-deploy@main
-        with:
-          build-only: true
+        # uses: DavidS/jekyll-deploy@main
+        # with:
+        #   build-only: true
+        # env:
+        #   JEKYLL_ENV: production
+        #   GH_PAGES_TOKEN: ${{ secrets.GH_TOKEN }}
+        uses: helaili/jekyll-action@v2
         env:
-          JEKYLL_ENV: production
-          GH_PAGES_TOKEN: ${{ secrets.GH_TOKEN }}
+          JEKYLL_PAT: ${{ secrets.GH_TOKEN }}
+        with:
+          jekyll_env: production
+          jekyll_src: ""
+          build_only: true
