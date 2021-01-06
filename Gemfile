@@ -12,7 +12,9 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-include-cache"
-  gem "jekyll-algolia"
   gem "jekyll-mentions"
   gem "jekyll-avatar"
+  gem "jekyll-toc"
+  gem "jekyll-twitter-plugin"
+  gem "jekyll-redirect-from"
 end

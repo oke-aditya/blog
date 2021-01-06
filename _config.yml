@@ -97,6 +97,8 @@ plugins:
   - jekyll-include-cache
   - jekyll-mentions
   - jekyll-avatar
+  - jekyll-toc
+  - jekyll-twitter-plugin
 
 author:
   name   : "Aditya Oke"
@@ -150,4 +152,3 @@ defaults:
 tag_archive:
   type: liquid
   path: /tags/
-

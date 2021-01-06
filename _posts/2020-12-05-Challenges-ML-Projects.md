@@ -1,5 +1,6 @@
 ---
 title: "Challenges with Machine Learning Projects"
+toc: true
 tag:
   - Projects
   - Machine Learning
@@ -17,13 +18,13 @@ Code becomes complex and end of month or year, it becomes impossible to understa
 
 ## But Why do projects become spaghetti code ?
 
-- Lack of project structure: -
+### Lack of project structure
 
 Projects that lack structure intially later become a mess. Usually this occurs when all code is dumped into a `src` folder.
 This folder gets highly polluted and later it becomes hard to understand the codebease.
 It is wiser to divide codebase into folders and sub folders, which make it easier to understand code.
 
-- Not documenting the code or work : -
+### Not documenting the code or work 
 
 Code that looks obvious right now becomes very hard to understand later.
 Remember that code written should be re-usable and accessible to all people.
@@ -55,7 +56,7 @@ def area_rect(rect: Tuple):
 
 How simple yet so powerful can docuemnting be !
 
-- Missing requirements, not specifing how to use the project: - 
+### Missing requirements, not specifing how to use the project 
 
 These are small additions, such as having a `requirements.txt` file can help people to replicate your computer packages.
 Which would enable them to stay consistent with your work.
@@ -63,7 +64,7 @@ Which would enable them to stay consistent with your work.
 Having a proper `Readme` which describes how the projects is structured and how it should be run is really helpful.
 It helps people to replicate your code and try it for their work.
 
-- Not using functions: -
+### Not using functions
 
 Most people work without writing functions. This does not make code modular and harder to comprehend.
 Simply having functions with docstrings and calling them keeps content clear and easier to understand.
@@ -77,7 +78,7 @@ if __name__ == "__main__":
 
 {% endhighlight %}
 
-- Over Engineering: -
+### Over Engineering
 
 Well all the above examples are use cases of under engineering or not following simple practices.
 But at cases, people try to do too much and re-invent the wheel. There are multiple well supported and documented libraries available.
