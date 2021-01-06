@@ -15,4 +15,6 @@ group :jekyll_plugins do
   gem "jekyll-mentions"
   gem "jekyll-avatar"
   gem "jekyll-toc"
+  gem "jekyll-twitter-plugin"
+  gem "jekyll-redirect-from"
 end
