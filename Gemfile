@@ -17,4 +17,5 @@ group :jekyll_plugins do
   gem "jekyll-toc"
   gem "jekyll-twitter-plugin"
   gem "jekyll-redirect-from"
+  gem "jekyll-seo-tag"
 end
