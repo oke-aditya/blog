@@ -1,6 +1,10 @@
 ---
 title: "Projects"
 permalink: /projects/
+toc: true
+toc_sticky: true
+lang: en
+
 ---
 
 All Projects are available on my GitHub profile.

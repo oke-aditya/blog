@@ -18,4 +18,5 @@ group :jekyll_plugins do
   gem "jekyll-twitter-plugin"
   gem "jekyll-redirect-from"
   gem "jekyll-seo-tag"
+  gem "jekyll-polyglot"
 end

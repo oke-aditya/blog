@@ -1,6 +1,8 @@
 ---
 title: "Talks"
 permalink: /talks/
+lang: en
+
 ---
 
 Here, I would like to list a few talks which I have given.
