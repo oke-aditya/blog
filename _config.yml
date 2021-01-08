@@ -118,7 +118,6 @@ plugins:
   - jekyll-avatar
   - jekyll-toc
   - jekyll-twitter-plugin
-  - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-polyglot
 
