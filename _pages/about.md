@@ -19,12 +19,12 @@ All Projects are available on my GitHub profile.
 
 A brief overview about my top projects.
 
-## [Quickvision](https://github.com/Quick-AI/quickvision): -
+### [Quickvision](https://github.com/Quick-AI/quickvision): -
 
 An easy to use Computer Vision Library for PyTorch and Lightning.
 A simple API for transfer learning SOTA Models.
 
-## [Image Similarity Search Engine](https://github.com/oke-aditya/image_similarity): -
+### [Image Similarity Search Engine](https://github.com/oke-aditya/image_similarity): -
 
 Implementation of Image Similarity Search using convolutional auto-encoders.
 [Here](https://medium.com/pytorch/image-similarity-search-in-pytorch-1a744cf3469) is blog post about it from PyTorch.
