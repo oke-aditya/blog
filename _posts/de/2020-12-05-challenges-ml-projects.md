@@ -1,5 +1,5 @@
 ---
-title: "Challenges with Machine Learning Projects"
+title: "Herausforderungen bei maschinellen Lernprojekten"
 toc: true
 toc_sticky: true
 lang: de
@@ -7,7 +7,7 @@ tag:
   - Projects
   - Machine Learning
 
-excerpt: "Why Machine Learning Projects become code spaghetti?"
+excerpt: "Warum werden maschinelle Lernprojekte zu Code-Spaghetti?"
 header:
   overlay_color: "#333"
 ---
