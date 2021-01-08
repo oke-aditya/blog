@@ -1,11 +1,5 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Projects"
-    url: /projects/
-  - title: "Work"
-    url: /work/
-  - title: "Talks"
-    url: /talks/
   - title: "Tags"
     url: /tags/
