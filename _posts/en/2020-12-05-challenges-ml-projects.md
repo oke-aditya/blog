@@ -2,7 +2,7 @@
 title: "Challenges with Machine Learning Projects"
 toc: true
 toc_sticky: true
-lang: en
+# lang: en
 tag:
   - Projects
   - Machine Learning

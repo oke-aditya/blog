@@ -94,7 +94,7 @@ comments:
 
 # Muliti-Lingual Support
 languages: ["en", "sv", "de", "fr"]
-default_lang: "None"
+default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "README.md"]
 # Since paths are configured like that.
 # lang_from_path: true
