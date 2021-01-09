@@ -94,10 +94,10 @@ comments:
 
 # Muliti-Lingual Support
 languages: ["en", "sv", "de", "fr"]
-default_lang: "XX"
+default_lang: "None"
 exclude_from_localization: ["javascript", "images", "css", "README.md"]
 # Since paths are configured like that.
-lang_from_path: true
+# lang_from_path: true
 
 # Windows users must set this to false
 parallel_localization: false
