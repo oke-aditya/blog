@@ -93,7 +93,7 @@ comments:
     issue_term: "pathname"
 
 # Muliti-Lingual Support
-languages: ["en", "sv", "de", "fr"]
+languages: ["en", "de", "fr"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "README.md"]
 # Since paths are configured like that.

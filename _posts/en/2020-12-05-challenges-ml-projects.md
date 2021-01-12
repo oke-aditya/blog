@@ -47,9 +47,10 @@ Let's make this function better
 def area_rect(rect: Tuple):
   """
   Arguments:
-    rect (Typle): A tuple denoting rectangle in (x, y, w, h) format.
-    Where x, y are cordinates and w, h are width and height.
-  Return:
+    rect (Typle): A tuple denoting rectangle in (x, y, w, h)
+    format. Where x, y are cordinates and w, h are width
+    and height.
+  Returns (Int):
     Area of rectangle.
   """
   area = rect[2] * rect[3]
