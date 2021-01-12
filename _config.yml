@@ -29,6 +29,7 @@ twitter_username: AdityaOke11
 name: "Aditya Oke"
 github_username: oke-aditya
 minimal_mistakes_skin: contrast
+logo: "/assets/images/mast_logo.png"
 masthead_title: "Blog"
 
 search: true
@@ -93,7 +94,7 @@ comments:
     issue_term: "pathname"
 
 # Muliti-Lingual Support
-languages: ["en", "sv", "de", "fr"]
+languages: ["en", "de", "fr"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "README.md"]
 # Since paths are configured like that.
@@ -154,7 +155,7 @@ footer:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       values:
@@ -176,3 +177,9 @@ defaults:
 tag_archive:
   type: liquid
   path: /tags/
+
+# Some optimization
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
