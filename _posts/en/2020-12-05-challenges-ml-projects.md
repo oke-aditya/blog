@@ -3,6 +3,8 @@ title: "Challenges with Machine Learning Projects"
 toc: true
 toc_sticky: true
 lang: en
+categories:
+  - Blog
 tag:
   - Projects
   - Machine Learning

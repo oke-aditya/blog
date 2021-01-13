@@ -29,8 +29,8 @@ twitter_username: AdityaOke11
 name: "Aditya Oke"
 github_username: oke-aditya
 minimal_mistakes_skin: contrast
-logo: "/assets/images/mast_logo.png"
-masthead_title: "Blog"
+# logo: "/assets/images/mast_logo.png"
+masthead_title: "Home"
 
 search: true
 github: [metadata]
@@ -94,7 +94,7 @@ comments:
     issue_term: "pathname"
 
 # Muliti-Lingual Support
-languages: ["en", "de", "fr"]
+languages: ["en"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "README.md"]
 # Since paths are configured like that.
@@ -120,7 +120,6 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jekyll-seo-tag
-  - jekyll-polyglot
 
 # Personal Information rendered on left and bottom
 author:
@@ -173,6 +172,10 @@ defaults:
       layout: single
       author_profile: true
 
+# Category for Blogs
+category_archive:
+  type: liquid
+  path: /categories/
 # Tag search
 tag_archive:
   type: liquid
