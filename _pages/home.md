@@ -2,37 +2,32 @@
 layout: splash
 permalink: /
 hidden: true
+title: Developer's Diary
+
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
-  actions:
-    - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
+
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.21.0">Latest release v4.21.0</a></small>
+  A Free Open Source Blog For Developers.
+
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
+  - title: "Simple and Precise"
+    excerpt: "Easy to understand, lucid, byte sized posts. No bloated content or complications."
+    url: "/categories/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+    btn_label: "Read Here"
+
+  - title: "Wide Range of Topics"
+    excerpt: "Covers wide Range of Topics like Software Development, DevOps, Data Science"
+    url: "/tags/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+    btn_label: "Browse Topics"
+
+  - title: "100% free"
+    excerpt: "No Tracking, No Ads, No Monetization or Marketing !!"
+    url: "/about/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: ""
 ---
 
 {% include feature_row %}
