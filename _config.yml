@@ -29,7 +29,7 @@ twitter_username: AdityaOke11
 name: "Aditya Oke"
 github_username: oke-aditya
 minimal_mistakes_skin: contrast
-logo: "/assets/images/mast_logo.png"
+# logo: "/assets/images/mast_logo.png"
 masthead_title: "Home"
 
 search: true
