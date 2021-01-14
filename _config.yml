@@ -94,14 +94,14 @@ comments:
     issue_term: "pathname"
 
 # Muliti-Lingual Support
-languages: ["en"]
-default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "README.md"]
-# Since paths are configured like that.
-lang_from_path: true
+# languages: ["en"]
+# default_lang: "en"
+# exclude_from_localization: ["javascript", "images", "css", "README.md"]
+# # Since paths are configured like that.
+# lang_from_path: true
 
-# Windows users must set this to false
-parallel_localization: false
+# # Windows users must set this to false
+# parallel_localization: false
 
 # A known jekyll 4.x issue with multi lingual.
 sass:
@@ -120,6 +120,7 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jekyll-seo-tag
+  # - jekyll-polyglot
 
 # Personal Information rendered on left and bottom
 author:

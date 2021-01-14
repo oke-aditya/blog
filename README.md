@@ -1,18 +1,26 @@
-# My Personal Website and Blog
+# Developer's Diary
 
 Hi !
-Welcome to my blog as well as personal website.
+Welcome to Developer's Diary.
 
-## About the Blog
+A Free Open Source Blog For Developers.
+## About
 
-I created this blog to describe some common challenges in designing, maintaing and deploying Machine Learning Projects.
-This blog is practical oriented, written to understand how things can be done efficiently.
-Thank you for spending your time !
+This blog describes some common challenges and ideas in developer's daily life.
+The blog is practical, lucid and assumes that reader in amateur programmer.
+It presents practical solutions to common problems and promotes best practices.
 
-## About the Website
+Thank you for your support and time !
 
-This is my personal portofolio website, which I will keep updating as time and life progreses.
-This was built using Jekyll. Which makes it very easy to maintain.
+## Credits
 
 The website uses Minimal mistakes [template](https://github.com/mmistakes/mm-github-pages-starter/generate)
-which gives this website the pleasant formatting.
+it gives this website a rich look and feel.
+
+## Note
+
+This blog is completely free, it has no ads, no tracking, no monetization or marketing.
+Also it does not track you or offer any cookies.
+
+Show your support by starring, and sharing it with others !
+
