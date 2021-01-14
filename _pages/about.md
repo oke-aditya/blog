@@ -17,7 +17,7 @@ Hello! I'm Aditya Oke, currently an undergrad student at [Vellore Institue of Te
 Knowledge is free. Paywalls hurt by charging for it.
 Free and Open Source sotware builds most world, so should a blog be !
 
-### No Ads, marketing, cookies, tracking
+### No Ads, Marketing, Cookies or Tracking
 
 Because Content matters, not money.
 
