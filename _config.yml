@@ -120,6 +120,7 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jekyll-seo-tag
+  - jekyll-polyglot
 
 # Personal Information rendered on left and bottom
 author:

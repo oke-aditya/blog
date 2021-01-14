@@ -1,5 +1,6 @@
 ---
 title: "Challenges with Machine Learning Projects"
+permalink: /challenges-ml-projects/
 toc: true
 toc_sticky: true
 lang: en
