@@ -1,6 +1,5 @@
 ---
 permalink: /about/
-title: "About"
 lang: en
 toc: true
 toc_sticky: true
