@@ -10,12 +10,8 @@ toc_sticky: true
 
 Hello! I'm Aditya Oke, currently an undergrad student at [Vellore Institue of Technology](https://vit.ac.in/), India.
 
-My interests include Machine Learning, Deep Learning, Computer Vision and DevOps.
-I work mostly with [PyTorch](https://pytorch.org/). 
-## I contribute to open source !
+## Why This blog ?
 
-I'm an open source contributor and have contributed to [Torchvision](https://github.com/pytorch/vision), 
-[PyTorch Lightning Bolts](https://github.com/PyTorchLightning/pytorch-lightning-bolts).
 
 
 ## See something wrong ?
