@@ -1,0 +1,189 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# Website settings
+title: Aditya Oke
+email: okeaditya315@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Aditya Oke's Blog and Profile.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://oke-aditya.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+repository: "oke-aditya/blog"
+
+# Website settings
+twitter_username: AdityaOke11
+name: "Aditya Oke"
+github_username: oke-aditya
+minimal_mistakes_skin: contrast
+# logo: "/assets/images/mast_logo.png"
+masthead_title: "Home"
+
+search: true
+github: [metadata]
+
+# Build settings
+# remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone:  Asia/Kolkata
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - .htaccess
+  - _pages
+
+# Markdown settings
+encoding: "utf-8"
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  math_engine: mathjax
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - LICENSE
+  - README
+  - CHANGELOG
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Comments provider
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+
+# Muliti-Lingual Support
+# languages: ["en"]
+# default_lang: "en"
+# exclude_from_localization: ["javascript", "images", "css", "README.md"]
+# # Since paths are configured like that.
+# lang_from_path: true
+
+# # Windows users must set this to false
+# parallel_localization: false
+
+# A known jekyll 4.x issue with multi lingual.
+sass:
+    sourcemap: never
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-mentions
+  - jekyll-avatar
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jekyll-seo-tag
+  # - jekyll-polyglot
+
+# Personal Information rendered on left and bottom
+author:
+  name   : "Aditya Oke"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Undergrad Student. Aspiring Machine Learning Engineer."
+  location: "India"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:okeaditya315@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/AdityaOke11"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/oke-aditya"
+
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:okeaditya315@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/AdityaOke11"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/oke-aditya"
+
+# Rendering from folders
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Category for Blogs
+category_archive:
+  type: liquid
+  path: /categories/
+# Tag search
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Some optimization
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
