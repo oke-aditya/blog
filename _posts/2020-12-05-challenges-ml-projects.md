@@ -33,17 +33,17 @@ It is wise to divide codebase into folders and sub folders, which make it easier
 
 Code that looks obvious right now becomes very hard to understand later.
 Remember that code written should be re-usable and accessible to all people.
-Easy methods such as type hinting, Docstrings are sufficient and do make code clear.
+Easy methods such as type hinting, Docstrings are sufficient and make code clear.
 
 E.g. We write a function that takes a tuple denoting rectangle in `(x, y, w, h)` format.
 
 {% highlight python %}
 def foo(l):
-  r = l[2] * l[3]
-  return r
+  a = l[2] * l[3]
+  return a
 {% endhighlight %}
 
-The above code is ok, but if I hadn't written what it does, it would be hard to understand.
+The above code is ok, but if we hadn't written what it does, it would be hard to understand.
 Let's make this function better
 
 {% highlight python %}
