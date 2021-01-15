@@ -27,23 +27,23 @@ Code becomes complex and end of month or year, it becomes impossible to understa
 
 Projects that lack structure intially later become a mess. Usually this occurs when all code is dumped into a `src` folder.
 This folder gets highly polluted and later it becomes hard to understand the codebease.
-It is wiser to divide codebase into folders and sub folders, which make it easier to understand code.
+It is wise to divide codebase into folders and sub folders, which make it easier to understand code.
 
 ### Not documenting the code or work 
 
 Code that looks obvious right now becomes very hard to understand later.
 Remember that code written should be re-usable and accessible to all people.
-Easy methods such as type hinting, Docstrings are sufficient and do make code clear.
+Easy methods such as type hinting, Docstrings are sufficient and make code clear.
 
 E.g. We write a function that takes a tuple denoting rectangle in `(x, y, w, h)` format.
 
 {% highlight python %}
 def foo(l):
-  r = l[2] * l[3]
-  return r
+  a = l[2] * l[3]
+  return a
 {% endhighlight %}
 
-The above code is ok, but if I hadn't written what it does, it would be hard to understand.
+The above code is ok, but if we hadn't written what it does, it would be hard to understand.
 Let's make this function better
 
 {% highlight python %}
@@ -72,8 +72,8 @@ It helps people to replicate your code and try it for their work.
 
 ### Not using functions
 
-Most people work without writing functions. This does not make code modular and harder to comprehend.
-Simply having functions with docstrings and calling them keeps content clear and easier to understand.
+Many people work without writing functions. This does not make code modular and harder to comprehend.
+Having functions with docstrings and using them keeps content clear and easier to understand.
 Writing functions on top of file and calling in `main` is easier. E.g. let's call the above area function.
 
 {% highlight python %}
