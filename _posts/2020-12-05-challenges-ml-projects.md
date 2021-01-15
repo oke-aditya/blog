@@ -27,7 +27,7 @@ Code becomes complex and end of month or year, it becomes impossible to understa
 
 Projects that lack structure intially later become a mess. Usually this occurs when all code is dumped into a `src` folder.
 This folder gets highly polluted and later it becomes hard to understand the codebease.
-It is wiser to divide codebase into folders and sub folders, which make it easier to understand code.
+It is wise to divide codebase into folders and sub folders, which make it easier to understand code.
 
 ### Not documenting the code or work 
 
@@ -72,8 +72,8 @@ It helps people to replicate your code and try it for their work.
 
 ### Not using functions
 
-Most people work without writing functions. This does not make code modular and harder to comprehend.
-Simply having functions with docstrings and calling them keeps content clear and easier to understand.
+Many people work without writing functions. This does not make code modular and harder to comprehend.
+Having functions with docstrings and using them keeps content clear and easier to understand.
 Writing functions on top of file and calling in `main` is easier. E.g. let's call the above area function.
 
 {% highlight python %}
