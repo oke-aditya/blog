@@ -1,14 +1,10 @@
 # Developer's Diary
 
-<div align="center">
-
 ![Build and Deploy to Github Pages](https://github.com/oke-aditya/blog/workflows/Build%20and%20Deploy%20to%20Github%20Pages/badge.svg)
 
 ![Build Jekyll Page](https://github.com/oke-aditya/blog/workflows/Build%20Jekyll%20Page/badge.svg)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2681efc7-367b-466a-963f-f23f65152bb7/deploy-status)](https://app.netlify.com/sites/developers-diary/deploys)
-
-</div>
 
 Hi !
 Welcome to Developer's Diary.
