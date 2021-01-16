@@ -173,10 +173,6 @@ defaults:
       layout: single
       author_profile: true
 
-# Category for Blogs
-category_archive:
-  type: liquid
-  path: /categories/
 # Tag search
 tag_archive:
   type: liquid

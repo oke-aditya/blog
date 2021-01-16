@@ -4,10 +4,8 @@ permalink: /challenges-ml-projects/
 toc: true
 toc_sticky: true
 lang: en
-categories:
-  - Blog
+
 tag:
-  - Projects
   - Machine Learning
 
 excerpt: "Why Machine Learning Projects become code spaghetti?"
