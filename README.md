@@ -23,6 +23,12 @@ Thank you for your support and time !
 The website uses Minimal mistakes [template](https://github.com/mmistakes/mm-github-pages-starter/generate)
 it gives this website a rich look and feel.
 
+## Picture Credits
+
+[Pen Image](https://unsplash.com/photos/8XddFc6NkBY) by Ashley Edwards
+[Library Image](https://unsplash.com/photos/NIJuEQw0RKg) by Iñaki del Olmo
+[No Image](https://unsplash.com/photos/1GxdTleoEls) by Nick Fewings
+
 ## Note
 
 This blog is completely free, it has no ads, no tracking, no monetization or marketing.
