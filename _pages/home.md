@@ -15,7 +15,7 @@ feature_row:
     alt: Placeholder Image 1
     title: "Simple and Precise"
     excerpt: "Easy to understand, lucid, byte sized posts. No bloated content or complications."
-    url: "/categories/"
+    url: "/posts/"
     btn_class: "btn--primary"
     btn_label: "Read Here"
 

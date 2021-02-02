@@ -137,6 +137,7 @@ DEPENDENCIES
   jekyll-twitter-plugin
   jemoji
   minimal-mistakes-jekyll (~> 4.21.0)
+  tzinfo-data
 
 RUBY VERSION
    ruby 2.7.2p137

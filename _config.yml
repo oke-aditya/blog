@@ -72,6 +72,10 @@ kramdown:
   enable_coderay: false
   math_engine: mathjax
 
+# JS Processing
+after_footer_scripts:
+  - https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
+  - assets/js/clipboardrouge.js
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
