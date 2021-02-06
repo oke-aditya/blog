@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://oke-aditya.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oke-aditya.github.io/blog/" rel="alternate" type="text/html" /><updated>2021-02-06T13:22:11+05:30</updated><id>https://oke-aditya.github.io/blog/feed.xml</id><title type="html">Aditya Oke</title><subtitle>Aditya Oke's Blog and Profile.</subtitle><author><name>Aditya Oke</name></author><entry xml:lang="en"><title type="html">Jekyll For Blogging</title><link href="https://oke-aditya.github.io/blog/make-a-blog/" rel="alternate" type="text/html" title="Jekyll For Blogging" /><published>2021-01-16T00:00:00+05:30</published><updated>2021-01-16T00:00:00+05:30</updated><id>https://oke-aditya.github.io/blog/make-a-blog</id><content type="html" xml:base="https://oke-aditya.github.io/blog/make-a-blog/">&lt;h2 id=&quot;how-to-build-and-deploy-a-jekyll-blog-&quot;&gt;How to build And Deploy a Jekyll Blog ?&lt;/h2&gt;
+
+&lt;p&gt;Building a blog page is cumbersome, there are lot of features to worry about.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-progress--will-complete-this-soon-&quot;&gt;In Progress !! Will complete this soon .&lt;/h2&gt;</content><author><name>Aditya Oke</name></author><category term="Blogging" /><summary type="html">How To Build and Deploy A Jekyll Blog</summary></entry><entry xml:lang="en"><title type="html">Challenges with Machine Learning Projects</title><link href="https://oke-aditya.github.io/blog/challenges-ml-projects/" rel="alternate" type="text/html" title="Challenges with Machine Learning Projects" /><published>2020-12-25T00:00:00+05:30</published><updated>2020-12-25T00:00:00+05:30</updated><id>https://oke-aditya.github.io/blog/challenges-ml-projects</id><content type="html" xml:base="https://oke-aditya.github.io/blog/challenges-ml-projects/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Machine Learning Projects are hard to make. Maintaining them is even much harder.
+Code becomes complex and end of month or year, it becomes impossible to understand it.&lt;/p&gt;
+
+&lt;h2 id=&quot;but-why-do-projects-become-spaghetti-code-&quot;&gt;But Why do projects become spaghetti code ?&lt;/h2&gt;
+
+&lt;h3 id=&quot;lack-of-project-structure&quot;&gt;Lack of project structure&lt;/h3&gt;
+
+&lt;p&gt;Projects that lack structure intially later become a mess. Usually this occurs when all code is dumped into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder.
+This folder gets highly polluted and later it becomes hard to understand the codebease.
+It is wise to divide codebase into folders and sub folders, which make it easier to understand code.&lt;/p&gt;
+
+&lt;h3 id=&quot;not-documenting-the-code-or-work&quot;&gt;Not documenting the code or work&lt;/h3&gt;
+
+&lt;p&gt;Code that looks obvious right now becomes very hard to understand later.
+Remember that code written should be re-usable and accessible to all people.
+Easy methods such as type hinting, Docstrings are sufficient and make code clear.&lt;/p&gt;
+
+&lt;p&gt;E.g. We write a function that takes a tuple denoting rectangle in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(x, y, w, h)&lt;/code&gt; format.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The above code is ok, but if we hadn’t written what it does, it would be hard to understand.
+Let’s make this function better&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;area_rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;
+  Arguments:
+    rect (Typle): A tuple denoting rectangle in (x, y, w, h)
+    format. Where x, y are cordinates and w, h are width
+    and height.
+  Returns (Int):
+    Area of rectangle.
+  &quot;&quot;&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;area&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;area&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;How simple yet so powerful can docuemnting be !&lt;/p&gt;
+
+&lt;h3 id=&quot;missing-requirements-not-specifing-how-to-use-the-project&quot;&gt;Missing requirements, not specifing how to use the project&lt;/h3&gt;
+
+&lt;p&gt;These are small additions, such as having a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;requirements.txt&lt;/code&gt; file can help people to replicate your computer packages.
+Which would enable them to stay consistent with your work.&lt;/p&gt;
+
+&lt;p&gt;Having a proper &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Readme&lt;/code&gt; which describes how the projects is structured and how it should be run is really helpful.
+It helps people to replicate your code and try it for their work.&lt;/p&gt;
+
+&lt;h3 id=&quot;not-using-functions&quot;&gt;Not using functions&lt;/h3&gt;
+
+&lt;p&gt;Many people work without writing functions. This does not make code modular and harder to comprehend.
+Having functions with docstrings and using them keeps content clear and easier to understand.
+Writing functions on top of file and calling in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; is easier. E.g. let’s call the above area function.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;area_rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;over-engineering&quot;&gt;Over Engineering&lt;/h3&gt;
+
+&lt;p&gt;Well all the above examples are use cases of under engineering or not following simple practices.
+But at cases, people try to do too much and re-invent the wheel. There are multiple well supported and documented libraries available.
+Try to use those and their methods, most functions are already present and work really well.&lt;/p&gt;
+
+&lt;p&gt;That’s all for this blog! Hopefully your next project doesn’t become a spaghetti code!&lt;/p&gt;</content><author><name>Aditya Oke</name></author><category term="Machine Learning" /><summary type="html">Why Machine Learning Projects become code spaghetti?</summary></entry></feed>
