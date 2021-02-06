@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.7.2"
 
 gem "jekyll", "~> 4.2.0"
-gem "minimal-mistakes-jekyll", "~> 4.21.0"
+gem "minimal-mistakes-jekyll", "~> 4.22.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
