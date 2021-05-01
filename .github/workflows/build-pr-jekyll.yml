@@ -21,7 +21,7 @@ jobs:
       - name: Test Jekyll Pages
         uses: helaili/jekyll-action@v2
         env:
-          JEKYLL_PAT: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
         with:
           jekyll_env: production
           jekyll_src: ""
