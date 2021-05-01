@@ -20,9 +20,8 @@ jobs:
 
       - name: Test Jekyll Pages
         uses: helaili/jekyll-action@v2
-        env:
-          token: ${{ secrets.GH_TOKEN }}
         with:
+          token: ${{ secrets.GH_TOKEN }}
           jekyll_env: production
           jekyll_src: ""
           build_only: true
