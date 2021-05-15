@@ -82,7 +82,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     mini_portile2 (2.5.0)
-    minimal-mistakes-jekyll (4.22.0)
+    minimal-mistakes-jekyll (4.23.0)
       jekyll (>= 3.7, < 5.0)
       jekyll-feed (~> 0.1)
       jekyll-gist (~> 1.5)
@@ -136,7 +136,7 @@ DEPENDENCIES
   jekyll-toc
   jekyll-twitter-plugin
   jemoji
-  minimal-mistakes-jekyll (~> 4.22.0)
+  minimal-mistakes-jekyll (~> 4.23.0)
   tzinfo-data
 
 RUBY VERSION
