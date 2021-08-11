@@ -1,8 +1,8 @@
 source "https://rubygems.org"
-ruby "2.7.3"
+ruby "2.7.4"
 
 gem "jekyll", "~> 4.2.0"
-gem 'minimal-mistakes-jekyll', '~> 4.23.0'
+gem 'minimal-mistakes-jekyll', '~> 4.24.0'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
