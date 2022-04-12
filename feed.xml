@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://oke-aditya.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oke-aditya.github.io/blog/" rel="alternate" type="text/html" /><updated>2022-04-12T15:53:33+05:30</updated><id>https://oke-aditya.github.io/blog/feed.xml</id><title type="html">Aditya Oke</title><subtitle>Aditya Oke's Blog and Profile.</subtitle><author><name>Aditya Oke</name></author><entry xml:lang="en"><title type="html">Jekyll For Blogging</title><link href="https://oke-aditya.github.io/blog/make-a-blog/" rel="alternate" type="text/html" title="Jekyll For Blogging" /><published>2021-01-16T00:00:00+05:30</published><updated>2021-01-16T00:00:00+05:30</updated><id>https://oke-aditya.github.io/blog/make-a-blog</id><content type="html" xml:base="https://oke-aditya.github.io/blog/make-a-blog/"><![CDATA[<h2 id="how-to-build-and-deploy-a-jekyll-blog-">How to build And Deploy a Jekyll Blog ?</h2>
+
+<p>Building a blog page is cumbersome, there are lot of features to worry about.</p>
+
+<h2 id="in-progress--will-complete-this-soon-">In Progress !! Will complete this soon .</h2>]]></content><author><name>Aditya Oke</name></author><category term="Blogging" /><summary type="html"><![CDATA[How To Build and Deploy A Jekyll Blog]]></summary></entry><entry xml:lang="en"><title type="html">Challenges with Machine Learning Projects</title><link href="https://oke-aditya.github.io/blog/challenges-ml-projects/" rel="alternate" type="text/html" title="Challenges with Machine Learning Projects" /><published>2020-12-25T00:00:00+05:30</published><updated>2020-12-25T00:00:00+05:30</updated><id>https://oke-aditya.github.io/blog/challenges-ml-projects</id><content type="html" xml:base="https://oke-aditya.github.io/blog/challenges-ml-projects/"><![CDATA[<h2 id="introduction">Introduction</h2>
+
+<p>Machine Learning Projects are hard to make. Maintaining them is even much harder.
+Code becomes complex and end of month or year, it becomes impossible to understand it.</p>
+
+<h2 id="but-why-do-projects-become-spaghetti-code-">But Why do projects become spaghetti code ?</h2>
+
+<h3 id="lack-of-project-structure">Lack of project structure</h3>
+
+<p>Projects that lack structure intially later become a mess. Usually this occurs when all code is dumped into a <code class="language-plaintext highlighter-rouge">src</code> folder.
+This folder gets highly polluted and later it becomes hard to understand the codebease.
+It is wise to divide codebase into folders and sub folders, which make it easier to understand code.</p>
+
+<h3 id="not-documenting-the-code-or-work">Not documenting the code or work</h3>
+
+<p>Code that looks obvious right now becomes very hard to understand later.
+Remember that code written should be re-usable and accessible to all people.
+Easy methods such as type hinting, Docstrings are sufficient and make code clear.</p>
+
+<p>E.g. We write a function that takes a tuple denoting rectangle in <code class="language-plaintext highlighter-rouge">(x, y, w, h)</code> format.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+  <span class="n">a</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">l</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">a</span></code></pre></figure>
+
+<p>The above code is ok, but if we hadn’t written what it does, it would be hard to understand.
+Let’s make this function better</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">area_rect</span><span class="p">(</span><span class="n">rect</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">):</span>
+  <span class="s">"""
+  Arguments:
+    rect (Typle): A tuple denoting rectangle in (x, y, w, h)
+    format. Where x, y are cordinates and w, h are width
+    and height.
+  Returns (Int):
+    Area of rectangle.
+  """</span>
+  <span class="n">area</span> <span class="o">=</span> <span class="n">rect</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">rect</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">area</span></code></pre></figure>
+
+<p>How simple yet so powerful can docuemnting be !</p>
+
+<h3 id="missing-requirements-not-specifing-how-to-use-the-project">Missing requirements, not specifing how to use the project</h3>
+
+<p>These are small additions, such as having a <code class="language-plaintext highlighter-rouge">requirements.txt</code> file can help people to replicate your computer packages.
+Which would enable them to stay consistent with your work.</p>
+
+<p>Having a proper <code class="language-plaintext highlighter-rouge">Readme</code> which describes how the projects is structured and how it should be run is really helpful.
+It helps people to replicate your code and try it for their work.</p>
+
+<h3 id="not-using-functions">Not using functions</h3>
+
+<p>Many people work without writing functions. This does not make code modular and harder to comprehend.
+Having functions with docstrings and using them keeps content clear and easier to understand.
+Writing functions on top of file and calling in <code class="language-plaintext highlighter-rouge">main</code> is easier. E.g. let’s call the above area function.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+  <span class="n">rect</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+  <span class="n">res</span> <span class="o">=</span> <span class="n">area_rect</span><span class="p">(</span><span class="n">rect</span><span class="p">)</span></code></pre></figure>
+
+<h3 id="over-engineering">Over Engineering</h3>
+
+<p>Well all the above examples are use cases of under engineering or not following simple practices.
+But at cases, people try to do too much and re-invent the wheel. There are multiple well supported and documented libraries available.
+Try to use those and their methods, most functions are already present and work really well.</p>
+
+<p>That’s all for this blog! Hopefully your next project doesn’t become a spaghetti code!</p>]]></content><author><name>Aditya Oke</name></author><category term="Machine Learning" /><summary type="html"><![CDATA[Why Machine Learning Projects become code spaghetti?]]></summary></entry></feed>
