@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.7.5"
+ruby "3.0.3"
 
 gem "jekyll", "~> 4.2.2"
 gem 'minimal-mistakes-jekyll', '~> 4.24.0'
